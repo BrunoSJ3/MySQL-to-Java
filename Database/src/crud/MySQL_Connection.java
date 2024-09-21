@@ -6,7 +6,7 @@ public class MySQL_Connection
 
 {
     public Connection con;
-    private final String DRIVER = "com.mysql.jdcb.Driver";
+    // private final String DRIVER = "com.mysql.jdcb.Driver";
     private final String DB_Name = "locadora";
     private final String DB = "jdbc:mysql://localhost:3306/" + DB_Name;
     private final String USER = "root";
@@ -19,7 +19,7 @@ public class MySQL_Connection
         try
 
         {
-            Class.forName(DRIVER);
+            // Class.forName(DRIVER);
             con = DriverManager.getConnection(DB, USER, PASSWORD);
             System.out.println("Conexão estabelecida com sucesso: ");
             return true;

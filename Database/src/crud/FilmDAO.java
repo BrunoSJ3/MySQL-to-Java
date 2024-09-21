@@ -34,7 +34,7 @@ public class FilmDAO
         // são 5 pontos de ? por que são 5 linhas
         String cmdSQL = "INSERT INTO filmes(codigo,titulo,genero,produtora,dataCompra) VALUES(?,?,?,?,?,)";
         PreparedStatement ps = con.prepareStatement(cmdSQL);
-        ps.setString(1, filme.getCodigo());// o ínice é das informações das linhas
+        ps.setString(1, filme.getCodigo());// o índice é das informações das linhas
         ps.setString(2, filme.getTitulo());
         ps.setString(3, filme.getGenero());
         ps.setString(4, filme.getProdutora());
